@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".UserProfileEditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Please enter your profile data"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="First and last name" />
+
+            <EditText
+                android:id="@+id/dateOfBirthEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="Your date of birth" />
+
+            <EditText
+                android:id="@+id/genderEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="Gender [male/female]" />
+
+            <EditText
+                android:id="@+id/phoneNumEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="Phone number" />
+
+            <EditText
+                android:id="@+id/emailAddressEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="E-mail address" />
+
+            <EditText
+                android:id="@+id/bloodPressureEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:hint="Higher/lower blood pressure" />
+
+            <EditText
+                android:id="@+id/bloodSugarEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Latest blood sugar" />
+
+            <EditText
+                android:id="@+id/allergiesEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:hint="Allergies, separated by commas" />
+
+            <EditText
+                android:id="@+id/surgeriesEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:hint="Surgeries, separated by commas" />
+
+            <EditText
+                android:id="@+id/medicationsEditText"
+                android:layout_width="333dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:hint="Medications, separated by commas" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/doneEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="DONE" />
+
+</LinearLayout>
